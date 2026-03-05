@@ -137,6 +137,9 @@ body {
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .card img {
@@ -159,6 +162,29 @@ body {
 /* CONTATO */
 .contato p {
     margin: 10px 0;
+}
+
+.contato-links{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contato-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.contato-links a i{
+    margin-right: 8px;
+}
+
+.contato-links a:hover{
+    color: #0077b5;
+    transform: scale(1.1);
 }
 
 /* FOOTER */

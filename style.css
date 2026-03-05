@@ -218,6 +218,9 @@ footer {
     .hero h1 {
         font-size: 28px;
     }
+    .contato-links{
+        flex-direction: column;
+    }
 }
 
 

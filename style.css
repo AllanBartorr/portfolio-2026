@@ -193,3 +193,59 @@ footer {
         font-size: 28px;
     }
 }
+
+
+
+/* SCRIPT */
+
+/* animação inicial */
+
+.section,
+.card {
+opacity: 0;
+transform: translateY(40px);
+transition: all 0.8s ease;
+}
+
+.section.show,
+.card.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* hover moderno nos cards */
+
+.card {
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+transform: translateY(-8px) scale(1.02);
+box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* scroll suave */
+
+html {
+scroll-behavior: smooth;
+}
+
+.menu a {
+position: relative;
+text-decoration: none;
+}
+
+.menu a::after {
+content: "";
+position: absolute;
+width: 0%;
+height: 2px;
+left: 0;
+bottom: -4px;
+background: #00f7ff;
+transition: width 0.3s;
+}
+
+.menu a:hover::after {
+width: 100%;
+}

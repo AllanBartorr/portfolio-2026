@@ -109,6 +109,21 @@ body {
 
 .btn:hover {
     background: #0ea5e9;
+    border-radius: 10px;
+}
+
+/* Sobre mim */
+
+.sobremim{
+    display: flex;
+    align-items: center;
+}
+
+.img-Notebook{
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    border: solid 5px #e4e4ef;
 }
 
 /* SECTIONS */
@@ -220,6 +235,9 @@ footer {
     }
     .contato-links{
         flex-direction: column;
+    }
+    .img-Notebook{
+        display: none;
     }
 }
 

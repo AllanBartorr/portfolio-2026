@@ -1,6 +1,6 @@
 // animação ao aparecer na tela
 
-const elements = document.querySelectorAll(".section, .card");
+const elements = document.querySelectorAll(".section, .card, .sobremim");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
